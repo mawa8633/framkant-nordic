@@ -32,6 +32,11 @@ export default async function ArticlePage({ params }: Props) {
   const article = articles.find((item) => item.slug === slug);
   if (!article) notFound();
   const related = articles.filter((item) => item.slug !== article.slug);
+  const sections = [
+    ["Start with intent", "Clarify what the customer is trying to solve, then shape the page or campaign around that decision moment."],
+    ["Connect the journey", "Make sure visibility, website content, forms, CRM, follow-up, reviews, and reporting support each other."],
+    ["Measure the next action", "Track the events that show commercial progress so future improvements are based on evidence."],
+  ];
 
   return (
     <main className="page">
@@ -49,16 +54,16 @@ export default async function ArticlePage({ params }: Props) {
         </section>
         <section className="section alt">
           <SectionIntro
-            eyebrow="Article template"
+            eyebrow="Practical guide"
             title="Structured for education, SEO, and conversion."
-            copy="The CMS version should support author, published date, modified date, reading time, featured image, categories, tags, related articles, and Article schema."
+            copy="Use this guide as a starting point for clearer decisions, stronger search relevance, and a conversion path that connects to the wider growth system."
           />
           <SystemSnapshot compact />
           <div className="card-grid three">
-            {["Clear introduction", "Practical guidance", "Related conversion path"].map((item) => (
-              <div className="feature-card" key={item}>
-                <h3>{item}</h3>
-                <p>This placeholder content defines the article structure before editorial copy is added.</p>
+            {sections.map(([title, copy]) => (
+              <div className="feature-card" key={title}>
+                <h3>{title}</h3>
+                <p>{copy}</p>
               </div>
             ))}
           </div>

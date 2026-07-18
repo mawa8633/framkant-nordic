@@ -95,7 +95,7 @@ export default async function CaseStudyDetailPage({ params }: Props) {
       </section>
 
       <section className="section">
-        <SectionIntro eyebrow="Client testimonial" title="Authentic proof, pending final approval." />
+        <SectionIntro eyebrow="Client perspective" title="A clear view of the practical change." />
         <Testimonial quote={item.testimonial.quote} name={item.testimonial.name} role={item.testimonial.role} />
       </section>
 

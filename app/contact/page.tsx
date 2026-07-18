@@ -3,6 +3,7 @@ import Image from "next/image";
 import { SystemSnapshot } from "@/components/page-visuals";
 import { ContactForm } from "@/components/contact-form";
 import { CTA, SectionIntro } from "@/components/sections";
+import { site } from "@/lib/content";
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -65,19 +66,19 @@ export default function ContactPage() {
         <div className="card-grid three">
           <div className="stat-card">
             <h3>Email</h3>
-            <p>hello@framkantnordic.com</p>
+            <p>{site.email}</p>
           </div>
           <div className="stat-card">
             <h3>Phone</h3>
-            <p>+46 00 000 00 00</p>
+            <p>{site.phone}</p>
           </div>
           <div className="stat-card">
             <h3>Business Hours</h3>
-            <p>Monday-Friday, 09:00-17:00 CET</p>
+            <p>{site.businessHours}</p>
           </div>
         </div>
         <div className="notice spaced">
-          Calendar booking and CRM submission are ready for integration with the selected booking calendar and sales pipeline.
+          Your request is reviewed manually first, then routed into the right conversation and next step.
         </div>
       </section>
       <CTA copy="Prefer a direct conversation? Send the short form and we will guide the next step." />

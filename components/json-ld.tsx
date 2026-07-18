@@ -1,5 +1,7 @@
 import { site } from "@/lib/content";
 
+const contactTelephone = site.phone.startsWith("+") ? site.phone : undefined;
+
 export function JsonLd({ data }: { data: Record<string, unknown> }) {
   return (
     <script
@@ -18,7 +20,7 @@ export function OrganizationJsonLd() {
         name: site.name,
         url: site.url,
         email: site.email,
-        telephone: site.phone,
+        ...(contactTelephone ? { telephone: contactTelephone } : {}),
       }}
     />
   );
@@ -33,7 +35,7 @@ export function LocalBusinessJsonLd() {
         name: site.name,
         url: site.url,
         email: site.email,
-        telephone: site.phone,
+        ...(contactTelephone ? { telephone: contactTelephone } : {}),
         areaServed: "Sweden",
         openingHours: "Mo-Fr 09:00-17:00",
       }}
@@ -49,11 +51,6 @@ export function WebsiteJsonLd() {
         "@type": "WebSite",
         name: site.name,
         url: site.url,
-        potentialAction: {
-          "@type": "SearchAction",
-          target: `${site.url}/resources?search={search_term_string}`,
-          "query-input": "required name=search_term_string",
-        },
       }}
     />
   );

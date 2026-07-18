@@ -55,6 +55,6 @@ export async function POST(request: Request) {
 
   return NextResponse.json({
     ok: true,
-    message: "Thank you. Your request has been received and is ready for CRM handoff.",
+    message: "Thank you. Your request has been received. We will review it and follow up with the next step.",
   });
 }

@@ -5,6 +5,8 @@ import { ArrowRight } from "lucide-react";
 import { navigation, services, site } from "@/lib/content";
 
 export function SiteFooter() {
+  const phoneHref = site.phone.startsWith("+") ? `tel:${site.phone.replaceAll(" ", "")}` : null;
+
   return (
     <footer className="site-footer">
       <div className="footer-cta">
@@ -55,7 +57,7 @@ export function SiteFooter() {
         <div>
           <h3>Contact</h3>
           <a href={`mailto:${site.email}`}>{site.email}</a>
-          <a href={`tel:${site.phone.replaceAll(" ", "")}`}>{site.phone}</a>
+          {phoneHref ? <a href={phoneHref}>{site.phone}</a> : <p>{site.phone}</p>}
           <p>{site.businessHours}</p>
           <p>{site.address}</p>
         </div>

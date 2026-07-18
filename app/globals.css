@@ -404,6 +404,17 @@ p {
   object-fit: cover;
 }
 
+.inner-hero-photo.portrait {
+  background:
+    radial-gradient(circle at 70% 15%, rgba(0, 87, 194, 0.18), transparent 30%),
+    rgba(255, 255, 255, 0.06);
+}
+
+.inner-hero-photo.portrait img {
+  object-fit: contain;
+  object-position: center;
+}
+
 .inner-hero-photo::after {
   background:
     linear-gradient(180deg, transparent 45%, rgba(5, 7, 10, 0.78)),

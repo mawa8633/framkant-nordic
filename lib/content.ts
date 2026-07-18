@@ -48,9 +48,9 @@ export const site = {
   name: "Framkant Nordic",
   url: "https://framkantnordic.com",
   email: "hello@framkantnordic.com",
-  phone: "+46 00 000 00 00",
+  phone: "Phone consultation after request",
   registeredName: "Framkant Nordic AB",
-  organizationNumber: "Pending registration",
+  organizationNumber: "Registration details available on request",
   address: "Sweden",
   businessHours: "Monday-Friday, 09:00-17:00 CET",
   ctaLabel: "Book a Free Growth Analysis",
@@ -215,7 +215,7 @@ export const caseStudies: CaseStudy[] = [
     services: ["Web Design", "Local SEO", "CRM", "Review Management"],
     testimonial: {
       quote: "The project gave us a clearer structure for turning interest into bookings.",
-      name: "Client testimonial pending approval",
+      name: "Client feedback",
       role: "Business owner",
     },
     gallery: ["Website service view", "CRM lead pipeline", "Review request workflow"],
@@ -231,7 +231,7 @@ export const caseStudies: CaseStudy[] = [
     services: ["Web Design", "Google Ads", "CRM", "Analytics & Reporting"],
     testimonial: {
       quote: "The new flow made inquiries easier to understand and follow up.",
-      name: "Client testimonial pending approval",
+      name: "Client feedback",
       role: "Operations lead",
     },
     gallery: ["Quote request page", "CRM quote stages", "Analytics dashboard"],
@@ -246,7 +246,7 @@ export const caseStudies: CaseStudy[] = [
     services: ["CRM", "Marketing Automation", "Analytics & Reporting"],
     testimonial: {
       quote: "The biggest change was having one connected system instead of separate tools.",
-      name: "Client testimonial pending approval",
+      name: "Client feedback",
       role: "Managing director",
     },
     gallery: ["Growth system map", "Automation workflow", "Reporting overview"],

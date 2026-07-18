@@ -19,7 +19,7 @@ export function InnerHeroVisual({
 }) {
   return (
     <div className="inner-hero-visual" aria-label={label}>
-      <div className="inner-hero-photo">
+      <div className={image === "owner" ? "inner-hero-photo portrait" : "inner-hero-photo"}>
         <Image
           src={visualImages[image]}
           alt=""
