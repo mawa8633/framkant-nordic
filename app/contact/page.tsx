@@ -1,5 +1,6 @@
 import type { Metadata } from "next";
 import Image from "next/image";
+import { CheckCircle2, Clock3, ShieldCheck } from "lucide-react";
 import { SystemSnapshot } from "@/components/page-visuals";
 import { ContactForm } from "@/components/contact-form";
 import { CTA, SectionIntro } from "@/components/sections";
@@ -28,6 +29,20 @@ export default function ContactPage() {
             presence, identify the strongest opportunities, and recommend the right
             starting point.
           </p>
+          <div className="contact-hero-proof" aria-label="Contact review process">
+            <div>
+              <Clock3 size={18} />
+              <span>Manual review within one business day</span>
+            </div>
+            <div>
+              <ShieldCheck size={18} />
+              <span>Owner-led recommendation, no generic audit</span>
+            </div>
+            <div>
+              <CheckCircle2 size={18} />
+              <span>Clear next step before any project starts</span>
+            </div>
+          </div>
         </div>
         <div className="contact-side">
           <div className="contact-brand-card">
