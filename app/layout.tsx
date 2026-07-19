@@ -35,6 +35,9 @@ export const metadata: Metadata = {
     description:
       "Structured digital growth systems for long-term business growth.",
   },
+  other: {
+    "x-deploy-commit": process.env.VERCEL_GIT_COMMIT_SHA ?? "local",
+  },
 };
 
 export default function RootLayout({
