@@ -12,12 +12,11 @@ export function SiteHeader() {
           <Image
             src="/assets/logos/framkant-nordic-logo-transparent.png"
             alt=""
-            width={36}
-            height={36}
+            width={44}
+            height={44}
             priority
           />
         </span>
-        <span>{site.name}</span>
       </Link>
       <input className="nav-toggle" id="nav-toggle" type="checkbox" aria-label="Toggle navigation" />
       <label

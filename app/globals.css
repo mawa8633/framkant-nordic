@@ -158,22 +158,20 @@ p {
 .brand {
   align-items: center;
   display: inline-flex;
-  gap: 12px;
+  gap: 0;
   font-weight: 800;
 }
 
 .brand-mark {
   align-items: center;
-  background: rgba(0, 87, 194, 0.08);
-  border: 1px solid rgba(0, 87, 194, 0.14);
-  border-radius: 12px;
-  color: #ffffff;
+  background: transparent;
+  border: 0;
+  border-radius: 0;
   display: inline-flex;
-  font-size: 0.78rem;
-  height: 36px;
+  height: 44px;
   justify-content: center;
-  overflow: hidden;
-  width: 36px;
+  overflow: visible;
+  width: 44px;
 }
 
 .brand-mark img {
@@ -1822,6 +1820,7 @@ p {
 }
 
 .footer-brand {
+  gap: 12px;
   margin-bottom: 16px;
 }
 
