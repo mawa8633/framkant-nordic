@@ -1989,6 +1989,28 @@ p {
   width: 100%;
 }
 
+.compact-form {
+  gap: 12px;
+}
+
+.compact-form .field {
+  gap: 6px;
+}
+
+.compact-form .field label {
+  font-size: 0.82rem;
+}
+
+.compact-form .field input {
+  border-radius: 11px;
+  min-height: 44px;
+}
+
+.compact-form .button {
+  font-size: 0.86rem;
+  min-height: 44px;
+}
+
 .checkbox-group {
   border: 1px solid var(--line);
   border-radius: 14px;

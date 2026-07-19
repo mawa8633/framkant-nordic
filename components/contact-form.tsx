@@ -37,7 +37,7 @@ export function ContactForm({ variant = "full" }: { variant?: FormVariant }) {
 
   if (variant === "compact") {
     return (
-      <form className="contact-form" onSubmit={handleSubmit}>
+      <form className="contact-form compact-form" onSubmit={handleSubmit}>
         <input name="formType" type="hidden" value="compact" />
         <input name="message" type="hidden" value="Homepage growth analysis request" />
         <div className="field">
@@ -61,7 +61,7 @@ export function ContactForm({ variant = "full" }: { variant?: FormVariant }) {
   }
 
   return (
-    <form className="contact-form" onSubmit={handleSubmit}>
+    <form className="contact-form full-form" onSubmit={handleSubmit}>
       <div className="form-grid two">
         <div className="field">
           <label htmlFor="first-name">First Name</label>
