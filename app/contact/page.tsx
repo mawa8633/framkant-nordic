@@ -93,9 +93,6 @@ export default function ContactPage() {
             <p>{site.businessHours}</p>
           </div>
         </div>
-        <div className="notice spaced">
-          Your request is reviewed manually first, then routed into the right conversation and next step.
-        </div>
       </section>
       <CTA copy="Prefer a direct conversation? Send the short form and we will guide the next step." />
     </main>
