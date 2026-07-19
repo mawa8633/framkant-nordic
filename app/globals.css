@@ -1696,10 +1696,16 @@ p {
   background: var(--surface);
   border: 1px solid var(--line);
   border-radius: 999px;
-  color: var(--muted);
+  color: var(--blue-dark);
   font-size: 0.86rem;
   font-weight: 700;
   padding: 8px 12px;
+}
+
+.section.dark .metric-list li {
+  background: #ffffff;
+  border-color: rgba(255, 255, 255, 0.18);
+  color: var(--blue-dark);
 }
 
 .chip-row {
