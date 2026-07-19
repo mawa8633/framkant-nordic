@@ -29,9 +29,6 @@ export default function ContactPage() {
             starting point.
           </p>
         </div>
-      </section>
-
-      <section className="section dark contact-form-section">
         <div className="contact-side">
           <div className="contact-brand-card">
             <Image
@@ -60,7 +57,6 @@ export default function ContactPage() {
           </div>
         </div>
       </section>
-
       <section className="section alt">
         <SectionIntro
           eyebrow="Qualification"
