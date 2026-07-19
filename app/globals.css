@@ -1826,7 +1826,7 @@ p {
 
 .contact-form {
   display: grid;
-  gap: 16px;
+  gap: 14px;
 }
 
 .proof-strip {
@@ -1885,16 +1885,23 @@ p {
 .field textarea {
   background: var(--surface);
   border: 1px solid var(--line);
-  border-radius: 14px;
-  min-height: 56px;
-  padding: 0 16px;
+  border-radius: 12px;
+  font-size: 0.95rem;
+  min-height: 50px;
+  padding: 0 14px;
   width: 100%;
 }
 
 .field textarea {
-  min-height: 120px;
-  padding: 16px;
+  min-height: 108px;
+  padding: 14px;
   resize: vertical;
+}
+
+.contact-form .button {
+  font-size: 0.92rem;
+  min-height: 50px;
+  width: 100%;
 }
 
 .checkbox-group {
