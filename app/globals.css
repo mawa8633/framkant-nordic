@@ -1035,13 +1035,23 @@ p {
 }
 
 .founder-portrait {
-  background: #eef2f7;
-  min-height: 520px;
+  aspect-ratio: 0.86;
+  background: #dfe8f2;
+  border: 1px solid rgba(0, 87, 194, 0.12);
+  border-radius: 22px;
+  box-shadow: 0 24px 60px rgba(17, 24, 39, 0.12);
+  min-height: 0;
 }
 
 .founder-portrait img {
-  object-fit: contain;
-  object-position: center;
+  object-fit: cover;
+  object-position: center 22%;
+}
+
+.founder-portrait::after {
+  background:
+    linear-gradient(180deg, transparent 58%, rgba(5, 7, 10, 0.56)),
+    linear-gradient(135deg, rgba(0, 87, 194, 0.08), transparent 42%);
 }
 
 .story-image span {

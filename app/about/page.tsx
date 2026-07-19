@@ -43,6 +43,7 @@ export default function AboutPage() {
               src="/assets/images/owner/framkant-owner-portrait.jpg"
               alt="Framkant Nordic founder portrait"
               fill
+              quality={92}
               sizes="(max-width: 1060px) 100vw, 42vw"
               priority
             />
