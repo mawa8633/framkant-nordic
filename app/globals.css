@@ -262,19 +262,28 @@ p {
   font-weight: 750;
   gap: 7px;
   justify-content: center;
+  line-height: 1.1;
   min-height: 46px;
-  padding: 0 16px;
+  padding: 0 18px;
+  text-align: center;
   transition:
     background 280ms ease,
     border-color 280ms ease,
     color 280ms ease,
     transform 280ms ease,
     box-shadow 280ms ease;
+  white-space: nowrap;
 }
 
 .header-cta {
   background: var(--blue);
   color: #ffffff;
+  min-width: max-content;
+}
+
+.button svg,
+.header-cta svg {
+  flex: 0 0 auto;
 }
 
 .icon-button {
@@ -2416,6 +2425,7 @@ p {
   .button,
   .header-cta {
     width: 100%;
+    white-space: normal;
   }
 
   .contact-brand-card {
