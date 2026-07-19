@@ -388,6 +388,17 @@ p {
   align-items: center;
 }
 
+.contact-hero {
+  align-items: start;
+  min-height: auto;
+  padding-bottom: clamp(44px, 5vw, 72px);
+  padding-top: clamp(44px, 5vw, 72px);
+}
+
+.contact-hero .hero-copy {
+  padding-top: clamp(16px, 4vw, 48px);
+}
+
 .inner-page-hero .hero-copy {
   max-width: 760px;
 }
@@ -1878,6 +1889,7 @@ p {
 .contact-side {
   display: grid;
   gap: 20px;
+  min-width: 0;
 }
 
 .contact-brand-card {
@@ -2083,7 +2095,15 @@ p {
   border: 1px solid #f3d9a4;
   border-radius: 14px;
   color: #68420a;
-  padding: 16px;
+  font-weight: 650;
+  line-height: 1.55;
+  padding: 16px 18px;
+}
+
+.notice::selection,
+.notice *::selection {
+  background: rgba(0, 87, 194, 0.18);
+  color: var(--text);
 }
 
 .notice.spaced {
