@@ -34,7 +34,6 @@ export function SiteFooter() {
                 height={72}
               />
             </span>
-            <span>{site.name}</span>
           </Link>
           <p>{site.footerStatement}</p>
         </div>
