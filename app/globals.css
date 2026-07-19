@@ -1945,8 +1945,8 @@ p {
 }
 
 .contact-brand-card h2 {
-  font-size: clamp(1.25rem, 2vw, 1.65rem);
-  line-height: 1.12;
+  font-size: clamp(1.05rem, 1.45vw, 1.3rem);
+  line-height: 1.18;
   margin: 0;
 }
 
