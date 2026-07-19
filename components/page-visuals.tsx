@@ -6,7 +6,7 @@ const visualImages = {
   dashboard: "/assets/images/marketing-dashboard.jpg",
   cleaning: "/assets/images/office-cleaning.jpg",
   salon: "/assets/images/salon-work.jpg",
-  owner: "/assets/images/owner/framkant-owner-portrait-ultra.webp",
+  owner: "/assets/images/owner/framkant-owner-portrait-same-face.webp",
   logo: "/assets/logos/framkant-nordic-logo-transparent.png",
 };
 

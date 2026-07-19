@@ -44,7 +44,7 @@ export default function ContactPage() {
             </div>
             <div className="owner-mini">
               <Image
-                src="/assets/images/owner/framkant-owner-portrait-ultra.webp"
+                src="/assets/images/owner/framkant-owner-portrait-same-face.webp"
                 alt="Framkant Nordic owner"
                 fill
                 quality={95}

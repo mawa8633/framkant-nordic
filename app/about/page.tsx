@@ -40,7 +40,7 @@ export default function AboutPage() {
           />
           <div className="story-image founder-portrait">
             <Image
-              src="/assets/images/owner/framkant-owner-portrait-ultra.webp"
+              src="/assets/images/owner/framkant-owner-portrait-same-face.webp"
               alt="Framkant Nordic founder portrait"
               fill
               quality={95}
