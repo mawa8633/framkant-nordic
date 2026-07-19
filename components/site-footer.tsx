@@ -30,8 +30,8 @@ export function SiteFooter() {
               <Image
                 src="/assets/logos/framkant-nordic-logo-transparent.png"
                 alt=""
-                width={36}
-                height={36}
+                width={72}
+                height={72}
               />
             </span>
             <span>{site.name}</span>

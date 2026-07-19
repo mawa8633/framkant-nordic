@@ -168,10 +168,10 @@ p {
   border: 0;
   border-radius: 0;
   display: inline-flex;
-  height: 56px;
+  height: 72px;
   justify-content: center;
   overflow: visible;
-  width: 56px;
+  width: 72px;
 }
 
 .brand-mark img {
@@ -1769,16 +1769,16 @@ p {
   border: 1px solid rgba(255, 255, 255, 0.12);
   border-radius: 16px;
   display: inline-flex;
-  height: 58px;
+  height: 72px;
   justify-content: center;
   margin-right: -12px;
-  width: 58px;
+  width: 72px;
 }
 
 .cta-logo img {
-  height: 48px;
+  height: 62px;
   object-fit: contain;
-  width: 48px;
+  width: 62px;
 }
 
 .cta-band h2,
@@ -2304,6 +2304,11 @@ p {
 
   .site-header {
     gap: 16px;
+  }
+
+  .brand-mark {
+    height: 60px;
+    width: 60px;
   }
 
   body {
