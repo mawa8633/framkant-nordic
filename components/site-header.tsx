@@ -12,8 +12,8 @@ export function SiteHeader() {
           <Image
             src="/assets/logos/framkant-nordic-logo-transparent.png"
             alt=""
-            width={44}
-            height={44}
+            width={56}
+            height={56}
             priority
           />
         </span>

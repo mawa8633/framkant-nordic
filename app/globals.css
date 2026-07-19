@@ -168,10 +168,10 @@ p {
   border: 0;
   border-radius: 0;
   display: inline-flex;
-  height: 44px;
+  height: 56px;
   justify-content: center;
   overflow: visible;
-  width: 44px;
+  width: 56px;
 }
 
 .brand-mark img {
