@@ -105,11 +105,13 @@ export function ServiceGrid({ items }: { items: Service[] }) {
       {items.map((service, index) => {
         const Icon = serviceIcons[index % serviceIcons.length];
         return (
-          <Link className="feature-card clickable" href={`/services/${service.slug}` as Route} key={service.slug}>
-            <span className="icon-tile" aria-hidden="true">
-              <Icon className="card-icon" size={24} />
-            </span>
-            <span className="card-connector" aria-hidden="true" />
+          <Link className="feature-card service-card clickable" href={`/services/${service.slug}` as Route} key={service.slug}>
+            <div className="service-card-head">
+              <span className="service-number">{String(index + 1).padStart(2, "0")}</span>
+              <span className="icon-tile" aria-hidden="true">
+                <Icon className="card-icon" size={21} />
+              </span>
+            </div>
             <h3>{service.title}</h3>
             <p>{service.description}</p>
             <ul className="clean-list">
