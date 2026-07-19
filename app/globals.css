@@ -335,7 +335,7 @@ p {
 }
 
 .page {
-  overflow: hidden;
+  overflow-x: hidden;
 }
 
 .hero {
@@ -397,6 +397,10 @@ p {
 
 .contact-hero .hero-copy {
   padding-top: clamp(16px, 4vw, 48px);
+}
+
+.contact-hero h1 {
+  font-size: clamp(2.25rem, 4.4vw, 4.15rem);
 }
 
 .inner-page-hero .hero-copy {
@@ -2331,6 +2335,14 @@ p {
   .proof-strip,
   .footer-grid {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (min-width: 1061px) {
+  .contact-hero .hero-copy {
+    align-self: start;
+    position: sticky;
+    top: 112px;
   }
 }
 
