@@ -6,7 +6,7 @@ const visualImages = {
   dashboard: "/assets/images/marketing-dashboard.jpg",
   cleaning: "/assets/images/office-cleaning.jpg",
   salon: "/assets/images/salon-work.jpg",
-  owner: "/assets/images/owner/framkant-owner-portrait.jpg",
+  owner: "/assets/images/owner/framkant-owner-portrait-premium.jpg",
   logo: "/assets/logos/framkant-nordic-logo-transparent.png",
 };
 
@@ -25,6 +25,7 @@ export function InnerHeroVisual({
           alt=""
           fill
           sizes="(max-width: 1060px) 100vw, 38vw"
+          quality={95}
           priority
         />
         <span>{label}</span>
@@ -48,7 +49,8 @@ export function OwnerTrustPanel() {
           src={visualImages.owner}
           alt="Framkant Nordic owner"
           fill
-          sizes="(max-width: 700px) 100vw, 260px"
+          quality={95}
+          sizes="(max-width: 700px) 100vw, 280px"
         />
       </div>
       <div>

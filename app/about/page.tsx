@@ -40,10 +40,10 @@ export default function AboutPage() {
           />
           <div className="story-image founder-portrait">
             <Image
-              src="/assets/images/owner/framkant-owner-portrait.jpg"
+              src="/assets/images/owner/framkant-owner-portrait-premium.jpg"
               alt="Framkant Nordic founder portrait"
               fill
-              quality={92}
+              quality={95}
               sizes="(max-width: 1060px) 100vw, 42vw"
               priority
             />

@@ -44,9 +44,10 @@ export default function ContactPage() {
             </div>
             <div className="owner-mini">
               <Image
-                src="/assets/images/owner/framkant-owner-portrait.jpg"
+                src="/assets/images/owner/framkant-owner-portrait-premium.jpg"
                 alt="Framkant Nordic owner"
                 fill
+                quality={95}
                 sizes="96px"
               />
             </div>
