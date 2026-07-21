@@ -82,50 +82,61 @@ export default function Home() {
               <ArrowRight size={18} />
             </Link>
           </div>
-          <div className="proof-orbit" aria-hidden="true">
-            <span />
-            <span />
-            <span />
-          </div>
-          <div className="proof-mosaic" aria-label="Partnership guarantees">
-            <article className="proof-card proof-card-large">
-              <div className="proof-icon">
-                <Network size={22} />
+          <div className="proof-composition" aria-label="Partnership guarantees">
+            <div className="proof-orbit" aria-hidden="true">
+              <span />
+              <span />
+              <span />
+            </div>
+            <article className="proof-feature">
+              <div className="proof-feature-top">
+                <div className="proof-icon proof-icon-large">
+                  <Network size={26} />
+                </div>
+                <span>Core promise</span>
               </div>
-              <span>01</span>
               <h3>Structured systems</h3>
               <p>
                 Website, CRM, visibility, reviews, and reporting work as one
-                connected operating layer.
+                connected operating layer with clear ownership.
               </p>
-            </article>
-            <article className="proof-card proof-card-tall">
-              <div className="proof-icon">
-                <RefreshCcw size={22} />
+              <div className="proof-system-lines" aria-hidden="true">
+                <span />
+                <span />
+                <span />
               </div>
-              <span>02</span>
-              <h3>4-month trial period</h3>
-              <p>
-                Start with a clear evaluation window before deciding on a
-                long-term partnership.
-              </p>
-            </article>
-            <article className="proof-card proof-card-compact">
-              <div className="proof-icon">
-                <BadgeCheck size={22} />
+              <div className="proof-feature-meta">
+                <strong>One system</strong>
+                <em>No scattered tools</em>
               </div>
-              <span>03</span>
-              <h3>Money-back guarantee</h3>
             </article>
-            <article className="proof-card proof-card-wide">
+            <div className="proof-side-stack">
+              <article className="proof-note proof-note-trial">
+                <div className="proof-icon">
+                  <RefreshCcw size={20} />
+                </div>
+                <div>
+                  <span>Evaluation window</span>
+                  <h3>4-month trial period</h3>
+                </div>
+              </article>
+              <article className="proof-note proof-note-guarantee">
+                <span>Risk reversal</span>
+                <h3>Money-back guarantee</h3>
+                <div className="proof-seal" aria-hidden="true">
+                  <BadgeCheck size={28} />
+                </div>
+              </article>
+            </div>
+            <article className="proof-responsibility">
               <div className="proof-icon">
-                <ShieldCheck size={22} />
+                <ShieldCheck size={21} />
               </div>
-              <span>04</span>
-              <h3>Long-term responsibility</h3>
-              <p>
-                One accountable partner keeps the system improving after launch.
-              </p>
+              <div>
+                <span>After launch</span>
+                <h3>Long-term responsibility</h3>
+                <p>One accountable partner keeps the system improving after launch.</p>
+              </div>
             </article>
           </div>
         </div>
