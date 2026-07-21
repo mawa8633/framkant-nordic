@@ -1,7 +1,14 @@
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
-import { ArrowRight, CheckCircle2, ShieldCheck } from "lucide-react";
+import {
+  ArrowRight,
+  BadgeCheck,
+  CheckCircle2,
+  Network,
+  RefreshCcw,
+  ShieldCheck,
+} from "lucide-react";
 import { ContactForm } from "@/components/contact-form";
 import {
   ArticleGrid,
@@ -56,13 +63,72 @@ export default function Home() {
         </div>
       </section>
 
-      <section className="section proof-strip">
-        {["Structured systems", "4-month trial period", "Money-back guarantee", "Long-term responsibility"].map((item) => (
-          <div className="proof-item" key={item}>
-            <ShieldCheck size={20} />
-            <span>{item}</span>
+      <section className="section proof-strip" aria-labelledby="growth-trust-title">
+        <div className="proof-ambient proof-ambient-one" aria-hidden="true" />
+        <div className="proof-ambient proof-ambient-two" aria-hidden="true" />
+        <div className="proof-frame">
+          <div className="proof-copy">
+            <p className="eyebrow">Trust architecture</p>
+            <h2 id="growth-trust-title">
+              Built to feel calm before you commit.
+            </h2>
+            <p>
+              Every partnership starts with structure, visible ownership, and a
+              low-risk path into the growth system. No vague retainers. No hidden
+              moving parts.
+            </p>
+            <Link className="button primary proof-cta" href="/contact">
+              Book a Free Growth Analysis
+              <ArrowRight size={18} />
+            </Link>
           </div>
-        ))}
+          <div className="proof-orbit" aria-hidden="true">
+            <span />
+            <span />
+            <span />
+          </div>
+          <div className="proof-mosaic" aria-label="Partnership guarantees">
+            <article className="proof-card proof-card-large">
+              <div className="proof-icon">
+                <Network size={22} />
+              </div>
+              <span>01</span>
+              <h3>Structured systems</h3>
+              <p>
+                Website, CRM, visibility, reviews, and reporting work as one
+                connected operating layer.
+              </p>
+            </article>
+            <article className="proof-card proof-card-tall">
+              <div className="proof-icon">
+                <RefreshCcw size={22} />
+              </div>
+              <span>02</span>
+              <h3>4-month trial period</h3>
+              <p>
+                Start with a clear evaluation window before deciding on a
+                long-term partnership.
+              </p>
+            </article>
+            <article className="proof-card proof-card-compact">
+              <div className="proof-icon">
+                <BadgeCheck size={22} />
+              </div>
+              <span>03</span>
+              <h3>Money-back guarantee</h3>
+            </article>
+            <article className="proof-card proof-card-wide">
+              <div className="proof-icon">
+                <ShieldCheck size={22} />
+              </div>
+              <span>04</span>
+              <h3>Long-term responsibility</h3>
+              <p>
+                One accountable partner keeps the system improving after launch.
+              </p>
+            </article>
+          </div>
+        </div>
       </section>
 
       <section className="section dark">
